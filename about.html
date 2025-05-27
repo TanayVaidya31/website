@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Tanay Vaidya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-out">
+    <div id="navbar-container"></div>
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div>
+                <div class="education-card">
+                    <h3>🎓 Education</h3>
+                    <h4>B.Tech Computer Engineering</h4>
+                    <p>Sardar Patel Institute of Technology</p>
+                    <span style="color: var(--primary-color);">CGPA: 7.91/10</span>
+                    <p style="margin-top: 1rem;">Oct 2022 - Jun 2026</p>
+                </div>
+                <div class="education-card">
+                    <h4>SSC Board</h4>
+                    <p>Gangadhar Govind Patwardhan School</p>
+                    <span style="color: var(--primary-color);">Grade: 97%</span>
+                    <p style="margin-top: 1rem;">Graduated Jul 2020</p>
+                </div>
+            </div>
+            <div>
+                <div class="experience-card">
+                    <h3>💼 Experience</h3>
+                    <h4>Software Development Intern</h4>
+                    <p style="color: var(--primary-color);">ARJ Securities Pvt. Ltd.</p>
+                    <p style="color: var(--text-gray);">Jun 2024 – Aug 2024</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                        <li>Engineered web scraping applications for Nifty 50 companies using Selenium</li>
+                        <li>Streamlined daily data extraction pipeline with automated CSV processing</li>
+                        <li>Developed scripts to scrape financial data from NSE website</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <script>
+    fetch('navbar.html').then(r=>r.text()).then(html=>{
+        document.getElementById('navbar-container').innerHTML = html;
+    });
+    </script>
+</body>
+</html>
